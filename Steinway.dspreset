@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DecentSampler minVersion="1.0.0">
+  <ui width="812" height="375" bgImage="Images/background.png" layoutMode="relative" bgMode="top_left">
+    <tab name="main">
+      <labeled-knob x="445" y="75" width="80" height="82" textColor="ffffffff" trackForegroundColor="ffffffff" trackBackgroundColor="66999999" label="Attack" type="float" minValue="0.0" maxValue="4.0" value="0.009999999776482582" style="custom_skin_vertical_drag" customSkinImage="Images/fx-1.png" customSkinNumFrames="79" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+        <binding type="amp" level="instrument" position="0" parameter="ENV_ATTACK"/>
+      </labeled-knob>
+      <labeled-knob x="515" y="75" width="80" height="82" textColor="ffffffff" trackForegroundColor="ffffffff" trackBackgroundColor="66999999" label="Release" type="float" minValue="0.0" maxValue="20.0" value="20.0" style="custom_skin_vertical_drag" customSkinImage="Images/fx-1.png" customSkinNumFrames="79" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+        <binding type="amp" level="instrument" position="0" parameter="ENV_RELEASE"/>
+      </labeled-knob>
+      <labeled-knob x="585" y="75" width="80" height="82" textColor="ffffffff" trackForegroundColor="ffffffff" trackBackgroundColor="66999999" label="Chorus" type="float" minValue="0.0" maxValue="1" value="0.0" style="custom_skin_vertical_drag" customSkinImage="Images/fx-1.png" customSkinNumFrames="79" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+        <binding type="effect" level="instrument" position="1" parameter="FX_MIX"/>
+      </labeled-knob>
+      <labeled-knob x="655" y="75" width="80" height="82" textColor="ffffffff" trackForegroundColor="ffffffff" trackBackgroundColor="66999999" label="Tone" type="float" minValue="0" maxValue="1" value="1.0" style="custom_skin_vertical_drag" customSkinImage="Images/fx-1.png" customSkinNumFrames="79" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+        <binding type="effect" level="instrument" position="0" parameter="FX_FILTER_FREQUENCY" translation="table" translationTable="0,33;0.3,150;0.4,450;0.5,1100;0.7,4100;0.9,11000;1.0001,22000"/>
+      </labeled-knob>
+      <labeled-knob x="725" y="75" width="80" height="82" textColor="ffffffff" trackForegroundColor="ffffffff" trackBackgroundColor="66999999" label="Reverb Mix" type="float" minValue="0" maxValue="1" value="0.0" style="custom_skin_vertical_drag" customSkinImage="Images/fx-1.png" customSkinNumFrames="79" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+        <binding type="effect" level="instrument" position="2" parameter="FX_MIX" translation="linear"/>
+      </labeled-knob>
+      <menu x="600" y="40" width="200" height="30" requireSelection="true" placeholderText="Choose..." value="1">
+        <option name="Studio">
+          <binding type="effect" level="instrument" position="2" parameter="FX_IR_FILE" translation="fixed_value" translationValue="IR/Studio.wav"/>
+        </option>
+        <option name="Church">
+          <binding type="effect" level="instrument" position="2" parameter="FX_IR_FILE" translation="fixed_value" translationValue="IR/Church.wav"/>
+        </option>
+        <option name="Garage">
+          <binding type="effect" level="instrument" position="2" parameter="FX_IR_FILE" translation="fixed_value" translationValue="IR/Garage.wav"/>
+        </option>
+        <option name="Spring">
+          <binding type="effect" level="instrument" position="2" parameter="FX_IR_FILE" translation="fixed_value" translationValue="IR/Spring.wav"/>
+        </option>
+      </menu>
+    </tab>
+    <keyboard/>
+  </ui>
+  <groups>
+    <group name="stinway">
+      <sample path="samples/stinway-A-1-V25-7Q74.wav" name="21(A-1)-25" rootNote="21" loNote="21" hiNote="21" loVel="0" hiVel="25" start="121" end="497536"/>
+      <sample path="samples/stinway-A-1-V51-SA0N.wav" name="21(A-1)-51" rootNote="21" loNote="21" hiNote="21" loVel="26" hiVel="51" start="140" end="503424"/>
+      <sample path="samples/stinway-A-1-V76-IBWJ.wav" name="21(A-1)-76" rootNote="21" loNote="21" hiNote="21" loVel="52" hiVel="76" start="120" end="504960"/>
+      <sample path="samples/stinway-A-1-V102-ZIZ9.wav" name="21(A-1)-102" rootNote="21" loNote="21" hiNote="21" loVel="77" hiVel="102" start="16" end="506783"/>
+      <sample path="samples/stinway-A-1-V127-VLV9.wav" name="21(A-1)-127" rootNote="21" loNote="21" hiNote="21" loVel="103" hiVel="127" start="112" end="508032"/>
+      <sample path="samples/stinway-A#-1-V25-BW5J.wav" name="22(A#-1)-25" rootNote="22" loNote="22" hiNote="22" loVel="0" hiVel="25" start="49" end="496128"/>
+      <sample path="samples/stinway-A#-1-V51-Q2D4.wav" name="22(A#-1)-51" rootNote="22" loNote="22" hiNote="22" loVel="26" hiVel="51" start="44" end="504320"/>
+      <sample path="samples/stinway-A#-1-V76-Y72W.wav" name="22(A#-1)-76" rootNote="22" loNote="22" hiNote="22" loVel="52" hiVel="76" start="24" end="506496"/>
+      <sample path="samples/stinway-A#-1-V102-0UTZ.wav" name="22(A#-1)-102" rootNote="22" loNote="22" hiNote="22" loVel="77" hiVel="102" start="48" end="505472"/>
+      <sample path="samples/stinway-A#-1-V127-VEFT.wav" name="22(A#-1)-127" rootNote="22" loNote="22" hiNote="22" loVel="103" hiVel="127" start="128" end="508416"/>
+      <sample path="samples/stinway-B-1-V25-CUOX.wav" name="23(B-1)-25" rootNote="23" loNote="23" hiNote="23" loVel="0" hiVel="25" start="21" end="496384"/>
+      <sample path="samples/stinway-B-1-V51-7R8B.wav" name="23(B-1)-51" rootNote="23" loNote="23" hiNote="23" loVel="26" hiVel="51" start="28" end="505600"/>
+      <sample path="samples/stinway-B-1-V76-BBKU.wav" name="23(B-1)-76" rootNote="23" loNote="23" hiNote="23" loVel="52" hiVel="76" start="64" end="506752"/>
+      <sample path="samples/stinway-B-1-V102-15DO.wav" name="23(B-1)-102" rootNote="23" loNote="23" hiNote="23" loVel="77" hiVel="102" start="124" end="505984"/>
+      <sample path="samples/stinway-B-1-V127-5Q7T.wav" name="23(B-1)-127" rootNote="23" loNote="23" hiNote="23" loVel="103" hiVel="127" start="28" end="507392"/>
+      <sample path="samples/stinway-C0-V25-EOT5.wav" name="24(C0)-25" rootNote="24" loNote="24" hiNote="24" loVel="0" hiVel="25" start="69" end="496256"/>
+      <sample path="samples/stinway-C0-V51-3RP1.wav" name="24(C0)-51" rootNote="24" loNote="24" hiNote="24" loVel="26" hiVel="51" start="104" end="505088"/>
+      <sample path="samples/stinway-C0-V76-BWUB.wav" name="24(C0)-76" rootNote="24" loNote="24" hiNote="24" loVel="52" hiVel="76" start="48" end="507904"/>
+      <sample path="samples/stinway-C0-V102-DHGG.wav" name="24(C0)-102" rootNote="24" loNote="24" hiNote="24" loVel="77" hiVel="102" start="72" end="505558"/>
+      <sample path="samples/stinway-C0-V127-RXXJ.wav" name="24(C0)-127" rootNote="24" loNote="24" hiNote="24" loVel="103" hiVel="127" start="56" end="508288"/>
+      <sample path="samples/stinway-C#0-V25-0UCJ.wav" name="25(C#0)-25" rootNote="25" loNote="25" hiNote="25" loVel="0" hiVel="25" start="124" end="491543"/>
+      <sample path="samples/stinway-C#0-V51-Q4QM.wav" name="25(C#0)-51" rootNote="25" loNote="25" hiNote="25" loVel="26" hiVel="51" start="32" end="500352"/>
+      <sample path="samples/stinway-C#0-V76-O544.wav" name="25(C#0)-76" rootNote="25" loNote="25" hiNote="25" loVel="52" hiVel="76" start="72" end="506112"/>
+      <sample path="samples/stinway-C#0-V102-4AW2.wav" name="25(C#0)-102" rootNote="25" loNote="25" hiNote="25" loVel="77" hiVel="102" start="72" end="506112"/>
+      <sample path="samples/stinway-C#0-V127-9KV8.wav" name="25(C#0)-127" rootNote="25" loNote="25" hiNote="25" loVel="103" hiVel="127" start="124" end="507776"/>
+      <sample path="samples/stinway-D0-V25-Y1ZY.wav" name="26(D0)-25" rootNote="26" loNote="26" hiNote="26" loVel="0" hiVel="25" start="40" end="492551"/>
+      <sample path="samples/stinway-D0-V51-9KBR.wav" name="26(D0)-51" rootNote="26" loNote="26" hiNote="26" loVel="26" hiVel="51" start="116" end="500992"/>
+      <sample path="samples/stinway-D0-V76-3TQG.wav" name="26(D0)-76" rootNote="26" loNote="26" hiNote="26" loVel="52" hiVel="76" start="112" end="505602"/>
+      <sample path="samples/stinway-D0-V102-J4RD.wav" name="26(D0)-102" rootNote="26" loNote="26" hiNote="26" loVel="77" hiVel="102" start="112" end="505218"/>
+      <sample path="samples/stinway-D0-V127-3V6A.wav" name="26(D0)-127" rootNote="26" loNote="26" hiNote="26" loVel="103" hiVel="127" start="24" end="506965"/>
+      <sample path="samples/stinway-D#0-V25-IJG0.wav" name="27(D#0)-25" rootNote="27" loNote="27" hiNote="27" loVel="0" hiVel="25" start="48" end="489732"/>
+      <sample path="samples/stinway-D#0-V51-537B.wav" name="27(D#0)-51" rootNote="27" loNote="27" hiNote="27" loVel="26" hiVel="51" start="60" end="497826"/>
+      <sample path="samples/stinway-D#0-V76-9GBF.wav" name="27(D#0)-76" rootNote="27" loNote="27" hiNote="27" loVel="52" hiVel="76" start="40" end="503680"/>
+      <sample path="samples/stinway-D#0-V102-0S00.wav" name="27(D#0)-102" rootNote="27" loNote="27" hiNote="27" loVel="77" hiVel="102" start="92" end="506123"/>
+      <sample path="samples/stinway-D#0-V127-P9A8.wav" name="27(D#0)-127" rootNote="27" loNote="27" hiNote="27" loVel="103" hiVel="127" start="56" end="507520"/>
+      <sample path="samples/stinway-E0-V25-DETF.wav" name="28(E0)-25" rootNote="28" loNote="28" hiNote="28" loVel="0" hiVel="25" start="36" end="496896"/>
+      <sample path="samples/stinway-E0-V51-MWL2.wav" name="28(E0)-51" rootNote="28" loNote="28" hiNote="28" loVel="26" hiVel="51" start="52" end="505098"/>
+      <sample path="samples/stinway-E0-V76-156A.wav" name="28(E0)-76" rootNote="28" loNote="28" hiNote="28" loVel="52" hiVel="76" start="52" end="506073"/>
+      <sample path="samples/stinway-E0-V102-I5W5.wav" name="28(E0)-102" rootNote="28" loNote="28" hiNote="28" loVel="77" hiVel="102" start="132" end="507520"/>
+      <sample path="samples/stinway-E0-V127-8T19.wav" name="28(E0)-127" rootNote="28" loNote="28" hiNote="28" loVel="103" hiVel="127" start="40" end="509696"/>
+      <sample path="samples/stinway-F0-V25-LSC7.wav" name="29(F0)-25" rootNote="29" loNote="29" hiNote="29" loVel="0" hiVel="25" start="128" end="497935"/>
+      <sample path="samples/stinway-F0-V51-3YF7.wav" name="29(F0)-51" rootNote="29" loNote="29" hiNote="29" loVel="26" hiVel="51" start="52" end="504192"/>
+      <sample path="samples/stinway-F0-V76-SCCM.wav" name="29(F0)-76" rootNote="29" loNote="29" hiNote="29" loVel="52" hiVel="76" start="28" end="504448"/>
+      <sample path="samples/stinway-F0-V102-3H4U.wav" name="29(F0)-102" rootNote="29" loNote="29" hiNote="29" loVel="77" hiVel="102" start="128" end="506816"/>
+      <sample path="samples/stinway-F0-V127-FMWS.wav" name="29(F0)-127" rootNote="29" loNote="29" hiNote="29" loVel="103" hiVel="127" start="92" end="508800"/>
+      <sample path="samples/stinway-F#0-V25-PV8Y.wav" name="30(F#0)-25" rootNote="30" loNote="30" hiNote="30" loVel="0" hiVel="25" start="48" end="497156"/>
+      <sample path="samples/stinway-F#0-V51-KCWM.wav" name="30(F#0)-51" rootNote="30" loNote="30" hiNote="30" loVel="26" hiVel="51" start="112" end="503719"/>
+      <sample path="samples/stinway-F#0-V76-WI8F.wav" name="30(F#0)-76" rootNote="30" loNote="30" hiNote="30" loVel="52" hiVel="76" start="140" end="503424"/>
+      <sample path="samples/stinway-F#0-V102-721D.wav" name="30(F#0)-102" rootNote="30" loNote="30" hiNote="30" loVel="77" hiVel="102" start="112" end="504659"/>
+      <sample path="samples/stinway-F#0-V127-WIPC.wav" name="30(F#0)-127" rootNote="30" loNote="30" hiNote="30" loVel="103" hiVel="127" start="52" end="507520"/>
+      <sample path="samples/stinway-G0-V25-UTI1.wav" name="31(G0)-25" rootNote="31" loNote="31" hiNote="31" loVel="0" hiVel="25" start="52" end="494343"/>
+      <sample path="samples/stinway-G0-V51-GWNU.wav" name="31(G0)-51" rootNote="31" loNote="31" hiNote="31" loVel="26" hiVel="51" start="128" end="500352"/>
+      <sample path="samples/stinway-G0-V76-S4DQ.wav" name="31(G0)-76" rootNote="31" loNote="31" hiNote="31" loVel="52" hiVel="76" start="136" end="499328"/>
+      <sample path="samples/stinway-G0-V102-R28F.wav" name="31(G0)-102" rootNote="31" loNote="31" hiNote="31" loVel="77" hiVel="102" start="104" end="504576"/>
+      <sample path="samples/stinway-G0-V127-VL82.wav" name="31(G0)-127" rootNote="31" loNote="31" hiNote="31" loVel="103" hiVel="127" start="56" end="506496"/>
+      <sample path="samples/stinway-G#0-V25-NS7Q.wav" name="32(G#0)-25" rootNote="32" loNote="32" hiNote="32" loVel="0" hiVel="25" start="36" end="493350"/>
+      <sample path="samples/stinway-G#0-V51-21DI.wav" name="32(G#0)-51" rootNote="32" loNote="32" hiNote="32" loVel="26" hiVel="51" start="124" end="500224"/>
+      <sample path="samples/stinway-G#0-V76-CK9F.wav" name="32(G#0)-76" rootNote="32" loNote="32" hiNote="32" loVel="52" hiVel="76" start="100" end="501248"/>
+      <sample path="samples/stinway-G#0-V102-VUNG.wav" name="32(G#0)-102" rootNote="32" loNote="32" hiNote="32" loVel="77" hiVel="102" start="88" end="504194"/>
+      <sample path="samples/stinway-G#0-V127-L59E.wav" name="32(G#0)-127" rootNote="32" loNote="32" hiNote="32" loVel="103" hiVel="127" start="36" end="505987"/>
+      <sample path="samples/stinway-A0-V25-ZTF8.wav" name="33(A0)-25" rootNote="33" loNote="33" hiNote="33" loVel="0" hiVel="25" start="40" end="491791"/>
+      <sample path="samples/stinway-A0-V51-JO06.wav" name="33(A0)-51" rootNote="33" loNote="33" hiNote="33" loVel="26" hiVel="51" start="80" end="498320"/>
+      <sample path="samples/stinway-A0-V76-IXVZ.wav" name="33(A0)-76" rootNote="33" loNote="33" hiNote="33" loVel="52" hiVel="76" start="84" end="501648"/>
+      <sample path="samples/stinway-A0-V102-8G4C.wav" name="33(A0)-102" rootNote="33" loNote="33" hiNote="33" loVel="77" hiVel="102" start="100" end="499968"/>
+      <sample path="samples/stinway-A0-V127-2JD8.wav" name="33(A0)-127" rootNote="33" loNote="33" hiNote="33" loVel="103" hiVel="127" start="24" end="502528"/>
+      <sample path="samples/stinway-A#0-V25-NRGV.wav" name="34(A#0)-25" rootNote="34" loNote="34" hiNote="34" loVel="0" hiVel="25" start="16" end="492800"/>
+      <sample path="samples/stinway-A#0-V51-OAFN.wav" name="34(A#0)-51" rootNote="34" loNote="34" hiNote="34" loVel="26" hiVel="51" start="16" end="498471"/>
+      <sample path="samples/stinway-A#0-V76-EWAW.wav" name="34(A#0)-76" rootNote="34" loNote="34" hiNote="34" loVel="52" hiVel="76" start="44" end="500992"/>
+      <sample path="samples/stinway-A#0-V102-GOVX.wav" name="34(A#0)-102" rootNote="34" loNote="34" hiNote="34" loVel="77" hiVel="102" start="128" end="501504"/>
+      <sample path="samples/stinway-A#0-V127-5YB7.wav" name="34(A#0)-127" rootNote="34" loNote="34" hiNote="34" loVel="103" hiVel="127" start="16" end="503052"/>
+      <sample path="samples/stinway-B0-V25-FYBL.wav" name="35(B0)-25" rootNote="35" loNote="35" hiNote="35" loVel="0" hiVel="25" start="68" end="489728"/>
+      <sample path="samples/stinway-B0-V51-X6Z5.wav" name="35(B0)-51" rootNote="35" loNote="35" hiNote="35" loVel="26" hiVel="51" start="136" end="496512"/>
+      <sample path="samples/stinway-B0-V76-6H7S.wav" name="35(B0)-76" rootNote="35" loNote="35" hiNote="35" loVel="52" hiVel="76" start="120" end="496904"/>
+      <sample path="samples/stinway-B0-V102-92MJ.wav" name="35(B0)-102" rootNote="35" loNote="35" hiNote="35" loVel="77" hiVel="102" start="64" end="497030"/>
+      <sample path="samples/stinway-B0-V127-JSI3.wav" name="35(B0)-127" rootNote="35" loNote="35" hiNote="35" loVel="103" hiVel="127" start="68" end="499328"/>
+      <sample path="samples/stinway-C1-V25-7ANP.wav" name="36(C1)-25" rootNote="36" loNote="36" hiNote="36" loVel="0" hiVel="25" start="140" end="488064"/>
+      <sample path="samples/stinway-C1-V51-JQUH.wav" name="36(C1)-51" rootNote="36" loNote="36" hiNote="36" loVel="26" hiVel="51" start="96" end="493440"/>
+      <sample path="samples/stinway-C1-V76-EOPN.wav" name="36(C1)-76" rootNote="36" loNote="36" hiNote="36" loVel="52" hiVel="76" start="137" end="495756"/>
+      <sample path="samples/stinway-C1-V102-EBM7.wav" name="36(C1)-102" rootNote="36" loNote="36" hiNote="36" loVel="77" hiVel="102" start="136" end="497931"/>
+      <sample path="samples/stinway-C1-V127-1F6L.wav" name="36(C1)-127" rootNote="36" loNote="36" hiNote="36" loVel="103" hiVel="127" start="24" end="499584"/>
+      <sample path="samples/stinway-C#1-V25-N7XP.wav" name="37(C#1)-25" rootNote="37" loNote="37" hiNote="37" loVel="0" hiVel="25" start="140" end="489856"/>
+      <sample path="samples/stinway-C#1-V51-3C2I.wav" name="37(C#1)-51" rootNote="37" loNote="37" hiNote="37" loVel="26" hiVel="51" start="84" end="494336"/>
+      <sample path="samples/stinway-C#1-V76-87F7.wav" name="37(C#1)-76" rootNote="37" loNote="37" hiNote="37" loVel="52" hiVel="76" start="45" end="495744"/>
+      <sample path="samples/stinway-C#1-V102-TDLE.wav" name="37(C#1)-102" rootNote="37" loNote="37" hiNote="37" loVel="77" hiVel="102" start="144" end="498230"/>
+      <sample path="samples/stinway-C#1-V127-S3VV.wav" name="37(C#1)-127" rootNote="37" loNote="37" hiNote="37" loVel="103" hiVel="127" start="36" end="500111"/>
+      <sample path="samples/stinway-D1-V25-IS12.wav" name="38(D1)-25" rootNote="38" loNote="38" hiNote="38" loVel="0" hiVel="25" start="48" end="488753"/>
+      <sample path="samples/stinway-D1-V51-FV6M.wav" name="38(D1)-51" rootNote="38" loNote="38" hiNote="38" loVel="26" hiVel="51" start="88" end="495360"/>
+      <sample path="samples/stinway-D1-V76-MKCJ.wav" name="38(D1)-76" rootNote="38" loNote="38" hiNote="38" loVel="52" hiVel="76" start="145" end="493197"/>
+      <sample path="samples/stinway-D1-V102-4APA.wav" name="38(D1)-102" rootNote="38" loNote="38" hiNote="38" loVel="77" hiVel="102" start="92" end="494084"/>
+      <sample path="samples/stinway-D1-V127-8ZUL.wav" name="38(D1)-127" rootNote="38" loNote="38" hiNote="38" loVel="103" hiVel="127" start="48" end="496640"/>
+      <sample path="samples/stinway-D#1-V25-QMDP.wav" name="39(D#1)-25" rootNote="39" loNote="39" hiNote="39" loVel="0" hiVel="25" start="140" end="488704"/>
+      <sample path="samples/stinway-D#1-V51-1DXR.wav" name="39(D#1)-51" rootNote="39" loNote="39" hiNote="39" loVel="26" hiVel="51" start="104" end="492416"/>
+      <sample path="samples/stinway-D#1-V76-D55R.wav" name="39(D#1)-76" rootNote="39" loNote="39" hiNote="39" loVel="52" hiVel="76" start="132" end="492315"/>
+      <sample path="samples/stinway-D#1-V102-M5AF.wav" name="39(D#1)-102" rootNote="39" loNote="39" hiNote="39" loVel="77" hiVel="102" start="84" end="495104"/>
+      <sample path="samples/stinway-D#1-V127-GMZM.wav" name="39(D#1)-127" rootNote="39" loNote="39" hiNote="39" loVel="103" hiVel="127" start="72" end="496384"/>
+      <sample path="samples/stinway-E1-V25-T68F.wav" name="40(E1)-25" rootNote="40" loNote="40" hiNote="40" loVel="0" hiVel="25" start="44" end="487680"/>
+      <sample path="samples/stinway-E1-V51-JHTE.wav" name="40(E1)-51" rootNote="40" loNote="40" hiNote="40" loVel="26" hiVel="51" start="136" end="491648"/>
+      <sample path="samples/stinway-E1-V76-HJ0K.wav" name="40(E1)-76" rootNote="40" loNote="40" hiNote="40" loVel="52" hiVel="76" start="48" end="492032"/>
+      <sample path="samples/stinway-E1-V102-0FOZ.wav" name="40(E1)-102" rootNote="40" loNote="40" hiNote="40" loVel="77" hiVel="102" start="48" end="493720"/>
+      <sample path="samples/stinway-E1-V127-AF34.wav" name="40(E1)-127" rootNote="40" loNote="40" hiNote="40" loVel="103" hiVel="127" start="48" end="495368"/>
+      <sample path="samples/stinway-F1-V25-X9UA.wav" name="41(F1)-25" rootNote="41" loNote="41" hiNote="41" loVel="0" hiVel="25" start="64" end="490624"/>
+      <sample path="samples/stinway-F1-V51-XMNH.wav" name="41(F1)-51" rootNote="41" loNote="41" hiNote="41" loVel="26" hiVel="51" start="72" end="496128"/>
+      <sample path="samples/stinway-F1-V76-BN8O.wav" name="41(F1)-76" rootNote="41" loNote="41" hiNote="41" loVel="52" hiVel="76" start="130" end="494208"/>
+      <sample path="samples/stinway-F1-V102-BMV1.wav" name="41(F1)-102" rootNote="41" loNote="41" hiNote="41" loVel="77" hiVel="102" start="140" end="495232"/>
+      <sample path="samples/stinway-F1-V127-APAM.wav" name="41(F1)-127" rootNote="41" loNote="41" hiNote="41" loVel="103" hiVel="127" start="80" end="496256"/>
+      <sample path="samples/stinway-F#1-V25-QJLM.wav" name="42(F#1)-25" rootNote="42" loNote="42" hiNote="42" loVel="0" hiVel="25" start="20" end="491648"/>
+      <sample path="samples/stinway-F#1-V51-Z9GG.wav" name="42(F#1)-51" rootNote="42" loNote="42" hiNote="42" loVel="26" hiVel="51" start="56" end="495744"/>
+      <sample path="samples/stinway-F#1-V76-TA4H.wav" name="42(F#1)-76" rootNote="42" loNote="42" hiNote="42" loVel="52" hiVel="76" start="48" end="492808"/>
+      <sample path="samples/stinway-F#1-V102-332E.wav" name="42(F#1)-102" rootNote="42" loNote="42" hiNote="42" loVel="77" hiVel="102" start="44" end="496280"/>
+      <sample path="samples/stinway-F#1-V127-BINT.wav" name="42(F#1)-127" rootNote="42" loNote="42" hiNote="42" loVel="103" hiVel="127" start="44" end="497280"/>
+      <sample path="samples/stinway-G1-V25-UOHV.wav" name="43(G1)-25" rootNote="43" loNote="43" hiNote="43" loVel="0" hiVel="25" start="52" end="491392"/>
+      <sample path="samples/stinway-G1-V51-UJ9J.wav" name="43(G1)-51" rootNote="43" loNote="43" hiNote="43" loVel="26" hiVel="51" start="32" end="497161"/>
+      <sample path="samples/stinway-G1-V76-5OIY.wav" name="43(G1)-76" rootNote="43" loNote="43" hiNote="43" loVel="52" hiVel="76" start="64" end="493580"/>
+      <sample path="samples/stinway-G1-V102-CQVC.wav" name="43(G1)-102" rootNote="43" loNote="43" hiNote="43" loVel="77" hiVel="102" start="44" end="496029"/>
+      <sample path="samples/stinway-G1-V127-HQS5.wav" name="43(G1)-127" rootNote="43" loNote="43" hiNote="43" loVel="103" hiVel="127" start="44" end="498560"/>
+      <sample path="samples/stinway-G#1-V25-QXNP.wav" name="44(G#1)-25" rootNote="44" loNote="44" hiNote="44" loVel="0" hiVel="25" start="108" end="492337"/>
+      <sample path="samples/stinway-G#1-V51-NTJ0.wav" name="44(G#1)-51" rootNote="44" loNote="44" hiNote="44" loVel="26" hiVel="51" start="136" end="496000"/>
+      <sample path="samples/stinway-G#1-V76-3ITZ.wav" name="44(G#1)-76" rootNote="44" loNote="44" hiNote="44" loVel="52" hiVel="76" start="144" end="492160"/>
+      <sample path="samples/stinway-G#1-V102-5GGG.wav" name="44(G#1)-102" rootNote="44" loNote="44" hiNote="44" loVel="77" hiVel="102" start="88" end="496137"/>
+      <sample path="samples/stinway-G#1-V127-0S9Y.wav" name="44(G#1)-127" rootNote="44" loNote="44" hiNote="44" loVel="103" hiVel="127" start="120" end="497556"/>
+      <sample path="samples/stinway-A1-V25-5VHD.wav" name="45(A1)-25" rootNote="45" loNote="45" hiNote="45" loVel="0" hiVel="25" start="112" end="491136"/>
+      <sample path="samples/stinway-A1-V51-N2RP.wav" name="45(A1)-51" rootNote="45" loNote="45" hiNote="45" loVel="26" hiVel="51" start="132" end="494720"/>
+      <sample path="samples/stinway-A1-V76-9YPB.wav" name="45(A1)-76" rootNote="45" loNote="45" hiNote="45" loVel="52" hiVel="76" start="95" end="493184"/>
+      <sample path="samples/stinway-A1-V102-LPQA.wav" name="45(A1)-102" rootNote="45" loNote="45" hiNote="45" loVel="77" hiVel="102" start="72" end="493056"/>
+      <sample path="samples/stinway-A1-V127-PMV4.wav" name="45(A1)-127" rootNote="45" loNote="45" hiNote="45" loVel="103" hiVel="127" start="136" end="494725"/>
+      <sample path="samples/stinway-A#1-V25-YIPK.wav" name="46(A#1)-25" rootNote="46" loNote="46" hiNote="46" loVel="0" hiVel="25" start="140" end="490240"/>
+      <sample path="samples/stinway-A#1-V51-2EXV.wav" name="46(A#1)-51" rootNote="46" loNote="46" hiNote="46" loVel="26" hiVel="51" start="28" end="493440"/>
+      <sample path="samples/stinway-A#1-V76-M3JW.wav" name="46(A#1)-76" rootNote="46" loNote="46" hiNote="46" loVel="52" hiVel="76" start="51" end="492928"/>
+      <sample path="samples/stinway-A#1-V102-FIL2.wav" name="46(A#1)-102" rootNote="46" loNote="46" hiNote="46" loVel="77" hiVel="102" start="16" end="494208"/>
+      <sample path="samples/stinway-A#1-V127-ZZ20.wav" name="46(A#1)-127" rootNote="46" loNote="46" hiNote="46" loVel="103" hiVel="127" start="40" end="495503"/>
+      <sample path="samples/stinway-B1-V25-SPHO.wav" name="47(B1)-25" rootNote="47" loNote="47" hiNote="47" loVel="0" hiVel="25" start="52" end="491138"/>
+      <sample path="samples/stinway-B1-V51-FTWK.wav" name="47(B1)-51" rootNote="47" loNote="47" hiNote="47" loVel="26" hiVel="51" start="76" end="495360"/>
+      <sample path="samples/stinway-B1-V76-BOP7.wav" name="47(B1)-76" rootNote="47" loNote="47" hiNote="47" loVel="52" hiVel="76" start="24" end="493184"/>
+      <sample path="samples/stinway-B1-V102-Q60S.wav" name="47(B1)-102" rootNote="47" loNote="47" hiNote="47" loVel="77" hiVel="102" start="40" end="493824"/>
+      <sample path="samples/stinway-B1-V127-VX1U.wav" name="47(B1)-127" rootNote="47" loNote="47" hiNote="47" loVel="103" hiVel="127" start="20" end="495744"/>
+      <sample path="samples/stinway-C2-V25-BWS8.wav" name="48(C2)-25" rootNote="48" loNote="48" hiNote="48" loVel="0" hiVel="25" start="16" end="490368"/>
+      <sample path="samples/stinway-C2-V51-VKR5.wav" name="48(C2)-51" rootNote="48" loNote="48" hiNote="48" loVel="26" hiVel="51" start="88" end="495232"/>
+      <sample path="samples/stinway-C2-V76-TMJU.wav" name="48(C2)-76" rootNote="48" loNote="48" hiNote="48" loVel="52" hiVel="76" start="48" end="495387"/>
+      <sample path="samples/stinway-C2-V102-CPPH.wav" name="48(C2)-102" rootNote="48" loNote="48" hiNote="48" loVel="77" hiVel="102" start="20" end="495104"/>
+      <sample path="samples/stinway-C2-V127-K0CD.wav" name="48(C2)-127" rootNote="48" loNote="48" hiNote="48" loVel="103" hiVel="127" start="136" end="498176"/>
+      <sample path="samples/stinway-C#2-V25-GD4U.wav" name="49(C#2)-25" rootNote="49" loNote="49" hiNote="49" loVel="0" hiVel="25" start="44" end="489089"/>
+      <sample path="samples/stinway-C#2-V51-6TVV.wav" name="49(C#2)-51" rootNote="49" loNote="49" hiNote="49" loVel="26" hiVel="51" start="136" end="494720"/>
+      <sample path="samples/stinway-C#2-V76-KEXB.wav" name="49(C#2)-76" rootNote="49" loNote="49" hiNote="49" loVel="52" hiVel="76" start="60" end="494735"/>
+      <sample path="samples/stinway-C#2-V102-A8D0.wav" name="49(C#2)-102" rootNote="49" loNote="49" hiNote="49" loVel="77" hiVel="102" start="136" end="495641"/>
+      <sample path="samples/stinway-C#2-V127-6LS3.wav" name="49(C#2)-127" rootNote="49" loNote="49" hiNote="49" loVel="103" hiVel="127" start="140" end="496931"/>
+      <sample path="samples/stinway-D2-V25-QZ73.wav" name="50(D2)-25" rootNote="50" loNote="50" hiNote="50" loVel="0" hiVel="25" start="20" end="491147"/>
+      <sample path="samples/stinway-D2-V51-M53U.wav" name="50(D2)-51" rootNote="50" loNote="50" hiNote="50" loVel="26" hiVel="51" start="20" end="496640"/>
+      <sample path="samples/stinway-D2-V76-947P.wav" name="50(D2)-76" rootNote="50" loNote="50" hiNote="50" loVel="52" hiVel="76" start="142" end="495232"/>
+      <sample path="samples/stinway-D2-V102-N53V.wav" name="50(D2)-102" rootNote="50" loNote="50" hiNote="50" loVel="77" hiVel="102" start="48" end="490886"/>
+      <sample path="samples/stinway-D2-V127-LLXS.wav" name="50(D2)-127" rootNote="50" loNote="50" hiNote="50" loVel="103" hiVel="127" start="44" end="493952"/>
+      <sample path="samples/stinway-D#2-V25-JQTZ.wav" name="51(D#2)-25" rootNote="51" loNote="51" hiNote="51" loVel="0" hiVel="25" start="20" end="485898"/>
+      <sample path="samples/stinway-D#2-V51-PPJV.wav" name="51(D#2)-51" rootNote="51" loNote="51" hiNote="51" loVel="26" hiVel="51" start="112" end="490496"/>
+      <sample path="samples/stinway-D#2-V76-DNDB.wav" name="51(D#2)-76" rootNote="51" loNote="51" hiNote="51" loVel="52" hiVel="76" start="56" end="492672"/>
+      <sample path="samples/stinway-D#2-V102-VOJC.wav" name="51(D#2)-102" rootNote="51" loNote="51" hiNote="51" loVel="77" hiVel="102" start="132" end="490511"/>
+      <sample path="samples/stinway-D#2-V127-VN1Y.wav" name="51(D#2)-127" rootNote="51" loNote="51" hiNote="51" loVel="103" hiVel="127" start="48" end="492334"/>
+      <sample path="samples/stinway-E2-V25-T9CF.wav" name="52(E2)-25" rootNote="52" loNote="52" hiNote="52" loVel="0" hiVel="25" start="132" end="484749"/>
+      <sample path="samples/stinway-E2-V51-ZX26.wav" name="52(E2)-51" rootNote="52" loNote="52" hiNote="52" loVel="26" hiVel="51" start="36" end="490586"/>
+      <sample path="samples/stinway-E2-V76-YOZN.wav" name="52(E2)-76" rootNote="52" loNote="52" hiNote="52" loVel="52" hiVel="76" start="22" end="493246"/>
+      <sample path="samples/stinway-E2-V102-P1P8.wav" name="52(E2)-102" rootNote="52" loNote="52" hiNote="52" loVel="77" hiVel="102" start="92" end="492288"/>
+      <sample path="samples/stinway-E2-V127-1AMV.wav" name="52(E2)-127" rootNote="52" loNote="52" hiNote="52" loVel="103" hiVel="127" start="16" end="492416"/>
+      <sample path="samples/stinway-F2-V25-H8QP.wav" name="53(F2)-25" rootNote="53" loNote="53" hiNote="53" loVel="0" hiVel="25" start="140" end="489728"/>
+      <sample path="samples/stinway-F2-V51-0HQ5.wav" name="53(F2)-51" rootNote="53" loNote="53" hiNote="53" loVel="26" hiVel="51" start="44" end="493696"/>
+      <sample path="samples/stinway-F2-V76-ATGH.wav" name="53(F2)-76" rootNote="53" loNote="53" hiNote="53" loVel="52" hiVel="76" start="141" end="493825"/>
+      <sample path="samples/stinway-F2-V102-TBAJ.wav" name="53(F2)-102" rootNote="53" loNote="53" hiNote="53" loVel="77" hiVel="102" start="112" end="495624"/>
+      <sample path="samples/stinway-F2-V127-KMAV.wav" name="53(F2)-127" rootNote="53" loNote="53" hiNote="53" loVel="103" hiVel="127" start="28" end="497280"/>
+      <sample path="samples/stinway-F#2-V25-G1V5.wav" name="54(F#2)-25" rootNote="54" loNote="54" hiNote="54" loVel="0" hiVel="25" start="132" end="488704"/>
+      <sample path="samples/stinway-F#2-V51-IGTS.wav" name="54(F#2)-51" rootNote="54" loNote="54" hiNote="54" loVel="26" hiVel="51" start="44" end="493696"/>
+      <sample path="samples/stinway-F#2-V76-6E4X.wav" name="54(F#2)-76" rootNote="54" loNote="54" hiNote="54" loVel="52" hiVel="76" start="21" end="494208"/>
+      <sample path="samples/stinway-F#2-V102-PH5T.wav" name="54(F#2)-102" rootNote="54" loNote="54" hiNote="54" loVel="77" hiVel="102" start="48" end="495744"/>
+      <sample path="samples/stinway-F#2-V127-45HX.wav" name="54(F#2)-127" rootNote="54" loNote="54" hiNote="54" loVel="103" hiVel="127" start="88" end="496772"/>
+      <sample path="samples/stinway-G2-V25-DNS3.wav" name="55(G2)-25" rootNote="55" loNote="55" hiNote="55" loVel="0" hiVel="25" start="24" end="489472"/>
+      <sample path="samples/stinway-G2-V51-UH9X.wav" name="55(G2)-51" rootNote="55" loNote="55" hiNote="55" loVel="26" hiVel="51" start="48" end="494102"/>
+      <sample path="samples/stinway-G2-V76-UU5P.wav" name="55(G2)-76" rootNote="55" loNote="55" hiNote="55" loVel="52" hiVel="76" start="106" end="494768"/>
+      <sample path="samples/stinway-G2-V102-IX9Q.wav" name="55(G2)-102" rootNote="55" loNote="55" hiNote="55" loVel="77" hiVel="102" start="128" end="496512"/>
+      <sample path="samples/stinway-G2-V127-3C7H.wav" name="55(G2)-127" rootNote="55" loNote="55" hiNote="55" loVel="103" hiVel="127" start="24" end="497664"/>
+      <sample path="samples/stinway-G#2-V25-53RZ.wav" name="56(G#2)-25" rootNote="56" loNote="56" hiNote="56" loVel="0" hiVel="25" start="24" end="489216"/>
+      <sample path="samples/stinway-G#2-V51-UU6U.wav" name="56(G#2)-51" rootNote="56" loNote="56" hiNote="56" loVel="26" hiVel="51" start="36" end="494976"/>
+      <sample path="samples/stinway-G#2-V76-7JYS.wav" name="56(G#2)-76" rootNote="56" loNote="56" hiNote="56" loVel="52" hiVel="76" start="23" end="494720"/>
+      <sample path="samples/stinway-G#2-V102-E4Q4.wav" name="56(G#2)-102" rootNote="56" loNote="56" hiNote="56" loVel="77" hiVel="102" start="48" end="493216"/>
+      <sample path="samples/stinway-G#2-V127-ANVK.wav" name="56(G#2)-127" rootNote="56" loNote="56" hiNote="56" loVel="103" hiVel="127" start="140" end="495616"/>
+      <sample path="samples/stinway-A2-V25-NFNU.wav" name="57(A2)-25" rootNote="57" loNote="57" hiNote="57" loVel="0" hiVel="25" start="112" end="488192"/>
+      <sample path="samples/stinway-A2-V51-A7HZ.wav" name="57(A2)-51" rootNote="57" loNote="57" hiNote="57" loVel="26" hiVel="51" start="44" end="492672"/>
+      <sample path="samples/stinway-A2-V76-8LM8.wav" name="57(A2)-76" rootNote="57" loNote="57" hiNote="57" loVel="52" hiVel="76" start="27" end="491011"/>
+      <sample path="samples/stinway-A2-V102-4QTS.wav" name="57(A2)-102" rootNote="57" loNote="57" hiNote="57" loVel="77" hiVel="102" start="16" end="495360"/>
+      <sample path="samples/stinway-A2-V127-AD3O.wav" name="57(A2)-127" rootNote="57" loNote="57" hiNote="57" loVel="103" hiVel="127" start="12" end="497156"/>
+      <sample path="samples/stinway-A#2-V25-9952.wav" name="58(A#2)-25" rootNote="58" loNote="58" hiNote="58" loVel="0" hiVel="25" start="20" end="487813"/>
+      <sample path="samples/stinway-A#2-V51-D6UA.wav" name="58(A#2)-51" rootNote="58" loNote="58" hiNote="58" loVel="26" hiVel="51" start="44" end="493184"/>
+      <sample path="samples/stinway-A#2-V76-JW3U.wav" name="58(A#2)-76" rootNote="58" loNote="58" hiNote="58" loVel="52" hiVel="76" start="128" end="491648"/>
+      <sample path="samples/stinway-A#2-V102-PP4M.wav" name="58(A#2)-102" rootNote="58" loNote="58" hiNote="58" loVel="77" hiVel="102" start="44" end="492682"/>
+      <sample path="samples/stinway-A#2-V127-DEPP.wav" name="58(A#2)-127" rootNote="58" loNote="58" hiNote="58" loVel="103" hiVel="127" start="32" end="493824"/>
+      <sample path="samples/stinway-B2-V25-QVHT.wav" name="59(B2)-25" rootNote="59" loNote="59" hiNote="59" loVel="0" hiVel="25" start="140" end="488320"/>
+      <sample path="samples/stinway-B2-V51-PVPC.wav" name="59(B2)-51" rootNote="59" loNote="59" hiNote="59" loVel="26" hiVel="51" start="52" end="491520"/>
+      <sample path="samples/stinway-B2-V76-GABV.wav" name="59(B2)-76" rootNote="59" loNote="59" hiNote="59" loVel="52" hiVel="76" start="140" end="492928"/>
+      <sample path="samples/stinway-B2-V102-3MCZ.wav" name="59(B2)-102" rootNote="59" loNote="59" hiNote="59" loVel="77" hiVel="102" start="48" end="492186"/>
+      <sample path="samples/stinway-B2-V127-RU1F.wav" name="59(B2)-127" rootNote="59" loNote="59" hiNote="59" loVel="103" hiVel="127" start="56" end="494720"/>
+      <sample path="samples/stinway-C3-V25-QDIW.wav" name="60(C3)-25" rootNote="60" loNote="60" hiNote="60" loVel="0" hiVel="25" start="48" end="485760"/>
+      <sample path="samples/stinway-C3-V51-F9P4.wav" name="60(C3)-51" rootNote="60" loNote="60" hiNote="60" loVel="26" hiVel="51" start="132" end="491904"/>
+      <sample path="samples/stinway-C3-V76-QQX6.wav" name="60(C3)-76" rootNote="60" loNote="60" hiNote="60" loVel="52" hiVel="76" start="144" end="492432"/>
+      <sample path="samples/stinway-C3-V102-9J5K.wav" name="60(C3)-102" rootNote="60" loNote="60" hiNote="60" loVel="77" hiVel="102" start="104" end="493952"/>
+      <sample path="samples/stinway-C3-V127-Q9ZI.wav" name="60(C3)-127" rootNote="60" loNote="60" hiNote="60" loVel="103" hiVel="127" start="88" end="495872"/>
+      <sample path="samples/stinway-C#3-V25-XJ4X.wav" name="61(C#3)-25" rootNote="61" loNote="61" hiNote="61" loVel="0" hiVel="25" start="20" end="486927"/>
+      <sample path="samples/stinway-C#3-V51-P5VE.wav" name="61(C#3)-51" rootNote="61" loNote="61" hiNote="61" loVel="26" hiVel="51" start="120" end="491264"/>
+      <sample path="samples/stinway-C#3-V76-3S3P.wav" name="61(C#3)-76" rootNote="61" loNote="61" hiNote="61" loVel="52" hiVel="76" start="108" end="491159"/>
+      <sample path="samples/stinway-C#3-V102-927D.wav" name="61(C#3)-102" rootNote="61" loNote="61" hiNote="61" loVel="77" hiVel="102" start="16" end="494848"/>
+      <sample path="samples/stinway-C#3-V127-J0E7.wav" name="61(C#3)-127" rootNote="61" loNote="61" hiNote="61" loVel="103" hiVel="127" start="52" end="495744"/>
+      <sample path="samples/stinway-D3-V25-7EV8.wav" name="62(D3)-25" rootNote="62" loNote="62" hiNote="62" loVel="0" hiVel="25" start="44" end="487296"/>
+      <sample path="samples/stinway-D3-V51-FV1M.wav" name="62(D3)-51" rootNote="62" loNote="62" hiNote="62" loVel="26" hiVel="51" start="140" end="490112"/>
+      <sample path="samples/stinway-D3-V76-NY3L.wav" name="62(D3)-76" rootNote="62" loNote="62" hiNote="62" loVel="52" hiVel="76" start="140" end="493184"/>
+      <sample path="samples/stinway-D3-V102-QGRZ.wav" name="62(D3)-102" rootNote="62" loNote="62" hiNote="62" loVel="77" hiVel="102" start="44" end="494720"/>
+      <sample path="samples/stinway-D3-V127-0UU3.wav" name="62(D3)-127" rootNote="62" loNote="62" hiNote="62" loVel="103" hiVel="127" start="116" end="495872"/>
+      <sample path="samples/stinway-D#3-V25-MH01.wav" name="63(D#3)-25" rootNote="63" loNote="63" hiNote="63" loVel="0" hiVel="25" start="88" end="486016"/>
+      <sample path="samples/stinway-D#3-V51-QVE9.wav" name="63(D#3)-51" rootNote="63" loNote="63" hiNote="63" loVel="26" hiVel="51" start="132" end="492544"/>
+      <sample path="samples/stinway-D#3-V76-HPOL.wav" name="63(D#3)-76" rootNote="63" loNote="63" hiNote="63" loVel="52" hiVel="76" start="140" end="493184"/>
+      <sample path="samples/stinway-D#3-V102-8HC7.wav" name="63(D#3)-102" rootNote="63" loNote="63" hiNote="63" loVel="77" hiVel="102" start="48" end="493312"/>
+      <sample path="samples/stinway-D#3-V127-OXU8.wav" name="63(D#3)-127" rootNote="63" loNote="63" hiNote="63" loVel="103" hiVel="127" start="44" end="495616"/>
+      <sample path="samples/stinway-E3-V25-ITJS.wav" name="64(E3)-25" rootNote="64" loNote="64" hiNote="64" loVel="0" hiVel="25" start="24" end="485888"/>
+      <sample path="samples/stinway-E3-V51-PZHD.wav" name="64(E3)-51" rootNote="64" loNote="64" hiNote="64" loVel="26" hiVel="51" start="144" end="489101"/>
+      <sample path="samples/stinway-E3-V76-Y0SE.wav" name="64(E3)-76" rootNote="64" loNote="64" hiNote="64" loVel="52" hiVel="76" start="139" end="491908"/>
+      <sample path="samples/stinway-E3-V102-88SH.wav" name="64(E3)-102" rootNote="64" loNote="64" hiNote="64" loVel="77" hiVel="102" start="16" end="490240"/>
+      <sample path="samples/stinway-E3-V127-HJXM.wav" name="64(E3)-127" rootNote="64" loNote="64" hiNote="64" loVel="103" hiVel="127" start="44" end="490496"/>
+      <sample path="samples/stinway-F3-V25-LVLC.wav" name="65(F3)-25" rootNote="65" loNote="65" hiNote="65" loVel="0" hiVel="25" start="49" end="484096"/>
+      <sample path="samples/stinway-F3-V51-YA4T.wav" name="65(F3)-51" rootNote="65" loNote="65" hiNote="65" loVel="26" hiVel="51" start="128" end="489216"/>
+      <sample path="samples/stinway-F3-V76-MZDF.wav" name="65(F3)-76" rootNote="65" loNote="65" hiNote="65" loVel="52" hiVel="76" start="51" end="492007"/>
+      <sample path="samples/stinway-F3-V102-W89Z.wav" name="65(F3)-102" rootNote="65" loNote="65" hiNote="65" loVel="77" hiVel="102" start="120" end="490256"/>
+      <sample path="samples/stinway-F3-V127-T3A8.wav" name="65(F3)-127" rootNote="65" loNote="65" hiNote="65" loVel="103" hiVel="127" start="124" end="492160"/>
+      <sample path="samples/stinway-F#3-V25-NTEL.wav" name="66(F#3)-25" rootNote="66" loNote="66" hiNote="66" loVel="0" hiVel="25" start="113" end="479232"/>
+      <sample path="samples/stinway-F#3-V51-IX5A.wav" name="66(F#3)-51" rootNote="66" loNote="66" hiNote="66" loVel="26" hiVel="51" start="44" end="487936"/>
+      <sample path="samples/stinway-F#3-V76-4SBC.wav" name="66(F#3)-76" rootNote="66" loNote="66" hiNote="66" loVel="52" hiVel="76" start="91" end="490735"/>
+      <sample path="samples/stinway-F#3-V102-JTF2.wav" name="66(F#3)-102" rootNote="66" loNote="66" hiNote="66" loVel="77" hiVel="102" start="120" end="490883"/>
+      <sample path="samples/stinway-F#3-V127-JSLS.wav" name="66(F#3)-127" rootNote="66" loNote="66" hiNote="66" loVel="103" hiVel="127" start="48" end="491136"/>
+      <sample path="samples/stinway-G3-V25-607U.wav" name="67(G3)-25" rootNote="67" loNote="67" hiNote="67" loVel="0" hiVel="25" start="24" end="480261"/>
+      <sample path="samples/stinway-G3-V51-7R72.wav" name="67(G3)-51" rootNote="67" loNote="67" hiNote="67" loVel="26" hiVel="51" start="72" end="488832"/>
+      <sample path="samples/stinway-G3-V76-OODQ.wav" name="67(G3)-76" rootNote="67" loNote="67" hiNote="67" loVel="52" hiVel="76" start="90" end="489475"/>
+      <sample path="samples/stinway-G3-V102-DOQS.wav" name="67(G3)-102" rootNote="67" loNote="67" hiNote="67" loVel="77" hiVel="102" start="100" end="490496"/>
+      <sample path="samples/stinway-G3-V127-1LZ5.wav" name="67(G3)-127" rootNote="67" loNote="67" hiNote="67" loVel="103" hiVel="127" start="108" end="491412"/>
+      <sample path="samples/stinway-G#3-V25-KC9H.wav" name="68(G#3)-25" rootNote="68" loNote="68" hiNote="68" loVel="0" hiVel="25" start="140" end="483416"/>
+      <sample path="samples/stinway-G#3-V51-J010.wav" name="68(G#3)-51" rootNote="68" loNote="68" hiNote="68" loVel="26" hiVel="51" start="116" end="488715"/>
+      <sample path="samples/stinway-G#3-V76-Q9SU.wav" name="68(G#3)-76" rootNote="68" loNote="68" hiNote="68" loVel="52" hiVel="76" start="86" end="491136"/>
+      <sample path="samples/stinway-G#3-V102-RLY0.wav" name="68(G#3)-102" rootNote="68" loNote="68" hiNote="68" loVel="77" hiVel="102" start="136" end="490882"/>
+      <sample path="samples/stinway-G#3-V127-W6US.wav" name="68(G#3)-127" rootNote="68" loNote="68" hiNote="68" loVel="103" hiVel="127" start="116" end="493207"/>
+      <sample path="samples/stinway-A3-V25-BWJR.wav" name="69(A3)-25" rootNote="69" loNote="69" hiNote="69" loVel="0" hiVel="25" start="52" end="482840"/>
+      <sample path="samples/stinway-A3-V51-8GME.wav" name="69(A3)-51" rootNote="69" loNote="69" hiNote="69" loVel="26" hiVel="51" start="48" end="488832"/>
+      <sample path="samples/stinway-A3-V76-QR07.wav" name="69(A3)-76" rootNote="69" loNote="69" hiNote="69" loVel="52" hiVel="76" start="118" end="491520"/>
+      <sample path="samples/stinway-A3-V102-XOOC.wav" name="69(A3)-102" rootNote="69" loNote="69" hiNote="69" loVel="77" hiVel="102" start="44" end="490124"/>
+      <sample path="samples/stinway-A3-V127-BI3T.wav" name="69(A3)-127" rootNote="69" loNote="69" hiNote="69" loVel="103" hiVel="127" start="120" end="491556"/>
+      <sample path="samples/stinway-A#3-V25-3OYM.wav" name="70(A#3)-25" rootNote="70" loNote="70" hiNote="70" loVel="0" hiVel="25" start="113" end="485912"/>
+      <sample path="samples/stinway-A#3-V51-3ZIT.wav" name="70(A#3)-51" rootNote="70" loNote="70" hiNote="70" loVel="26" hiVel="51" start="100" end="490009"/>
+      <sample path="samples/stinway-A#3-V76-Z1S4.wav" name="70(A#3)-76" rootNote="70" loNote="70" hiNote="70" loVel="52" hiVel="76" start="141" end="491802"/>
+      <sample path="samples/stinway-A#3-V102-C87X.wav" name="70(A#3)-102" rootNote="70" loNote="70" hiNote="70" loVel="77" hiVel="102" start="44" end="492555"/>
+      <sample path="samples/stinway-A#3-V127-CZRM.wav" name="70(A#3)-127" rootNote="70" loNote="70" hiNote="70" loVel="103" hiVel="127" start="140" end="494976"/>
+      <sample path="samples/stinway-B3-V25-BQK7.wav" name="71(B3)-25" rootNote="71" loNote="71" hiNote="71" loVel="0" hiVel="25" start="137" end="472848"/>
+      <sample path="samples/stinway-B3-V51-9QG4.wav" name="71(B3)-51" rootNote="71" loNote="71" hiNote="71" loVel="26" hiVel="51" start="24" end="488960"/>
+      <sample path="samples/stinway-B3-V76-B5E7.wav" name="71(B3)-76" rootNote="71" loNote="71" hiNote="71" loVel="52" hiVel="76" start="41" end="491776"/>
+      <sample path="samples/stinway-B3-V102-68VT.wav" name="71(B3)-102" rootNote="71" loNote="71" hiNote="71" loVel="77" hiVel="102" start="44" end="494848"/>
+      <sample path="samples/stinway-B3-V127-JAOO.wav" name="71(B3)-127" rootNote="71" loNote="71" hiNote="71" loVel="103" hiVel="127" start="48" end="496256"/>
+      <sample path="samples/stinway-C4-V25-C1BH.wav" name="72(C4)-25" rootNote="72" loNote="72" hiNote="72" loVel="0" hiVel="25" start="50" end="480036"/>
+      <sample path="samples/stinway-C4-V51-BVZL.wav" name="72(C4)-51" rootNote="72" loNote="72" hiNote="72" loVel="26" hiVel="51" start="40" end="487868"/>
+      <sample path="samples/stinway-C4-V76-99X4.wav" name="72(C4)-76" rootNote="72" loNote="72" hiNote="72" loVel="52" hiVel="76" start="106" end="486144"/>
+      <sample path="samples/stinway-C4-V102-OMW2.wav" name="72(C4)-102" rootNote="72" loNote="72" hiNote="72" loVel="77" hiVel="102" start="36" end="488704"/>
+      <sample path="samples/stinway-C4-V127-TN63.wav" name="72(C4)-127" rootNote="72" loNote="72" hiNote="72" loVel="103" hiVel="127" start="20" end="490880"/>
+      <sample path="samples/stinway-C#4-V25-B53X.wav" name="73(C#4)-25" rootNote="73" loNote="73" hiNote="73" loVel="0" hiVel="25" start="142" end="453505"/>
+      <sample path="samples/stinway-C#4-V51-2ZWF.wav" name="73(C#4)-51" rootNote="73" loNote="73" hiNote="73" loVel="26" hiVel="51" start="52" end="487552"/>
+      <sample path="samples/stinway-C#4-V76-VBXZ.wav" name="73(C#4)-76" rootNote="73" loNote="73" hiNote="73" loVel="52" hiVel="76" start="130" end="488276"/>
+      <sample path="samples/stinway-C#4-V102-IMCP.wav" name="73(C#4)-102" rootNote="73" loNote="73" hiNote="73" loVel="77" hiVel="102" start="44" end="488192"/>
+      <sample path="samples/stinway-C#4-V127-V3II.wav" name="73(C#4)-127" rootNote="73" loNote="73" hiNote="73" loVel="103" hiVel="127" start="140" end="490240"/>
+      <sample path="samples/stinway-D4-V25-9D6O.wav" name="74(D4)-25" rootNote="74" loNote="74" hiNote="74" loVel="0" hiVel="25" start="52" end="484864"/>
+      <sample path="samples/stinway-D4-V51-B452.wav" name="74(D4)-51" rootNote="74" loNote="74" hiNote="74" loVel="26" hiVel="51" start="56" end="489088"/>
+      <sample path="samples/stinway-D4-V76-SHXG.wav" name="74(D4)-76" rootNote="74" loNote="74" hiNote="74" loVel="52" hiVel="76" start="44" end="488704"/>
+      <sample path="samples/stinway-D4-V102-97Q1.wav" name="74(D4)-102" rootNote="74" loNote="74" hiNote="74" loVel="77" hiVel="102" start="48" end="489107"/>
+      <sample path="samples/stinway-D4-V127-TCSN.wav" name="74(D4)-127" rootNote="74" loNote="74" hiNote="74" loVel="103" hiVel="127" start="136" end="490368"/>
+      <sample path="samples/stinway-D#4-V25-15ER.wav" name="75(D#4)-25" rootNote="75" loNote="75" hiNote="75" loVel="0" hiVel="25" start="48" end="483328"/>
+      <sample path="samples/stinway-D#4-V51-LKXB.wav" name="75(D#4)-51" rootNote="75" loNote="75" hiNote="75" loVel="26" hiVel="51" start="136" end="488192"/>
+      <sample path="samples/stinway-D#4-V76-EIG4.wav" name="75(D#4)-76" rootNote="75" loNote="75" hiNote="75" loVel="52" hiVel="76" start="128" end="489327"/>
+      <sample path="samples/stinway-D#4-V102-1HNL.wav" name="75(D#4)-102" rootNote="75" loNote="75" hiNote="75" loVel="77" hiVel="102" start="140" end="489216"/>
+      <sample path="samples/stinway-D#4-V127-D404.wav" name="75(D#4)-127" rootNote="75" loNote="75" hiNote="75" loVel="103" hiVel="127" start="136" end="490752"/>
+      <sample path="samples/stinway-E4-V25-RUTR.wav" name="76(E4)-25" rootNote="76" loNote="76" hiNote="76" loVel="0" hiVel="25" start="48" end="462416"/>
+      <sample path="samples/stinway-E4-V51-9SET.wav" name="76(E4)-51" rootNote="76" loNote="76" hiNote="76" loVel="26" hiVel="51" start="136" end="486656"/>
+      <sample path="samples/stinway-E4-V76-R6EY.wav" name="76(E4)-76" rootNote="76" loNote="76" hiNote="76" loVel="52" hiVel="76" start="49" end="488576"/>
+      <sample path="samples/stinway-E4-V102-GWWP.wav" name="76(E4)-102" rootNote="76" loNote="76" hiNote="76" loVel="77" hiVel="102" start="140" end="492449"/>
+      <sample path="samples/stinway-E4-V127-LDCV.wav" name="76(E4)-127" rootNote="76" loNote="76" hiNote="76" loVel="103" hiVel="127" start="44" end="492567"/>
+      <sample path="samples/stinway-F4-V25-32WN.wav" name="77(F4)-25" rootNote="77" loNote="77" hiNote="77" loVel="0" hiVel="25" start="132" end="485646"/>
+      <sample path="samples/stinway-F4-V51-BVTZ.wav" name="77(F4)-51" rootNote="77" loNote="77" hiNote="77" loVel="26" hiVel="51" start="48" end="490516"/>
+      <sample path="samples/stinway-F4-V76-XCQL.wav" name="77(F4)-76" rootNote="77" loNote="77" hiNote="77" loVel="52" hiVel="76" start="97" end="488980"/>
+      <sample path="samples/stinway-F4-V102-9FBP.wav" name="77(F4)-102" rootNote="77" loNote="77" hiNote="77" loVel="77" hiVel="102" start="28" end="489216"/>
+      <sample path="samples/stinway-F4-V127-FCFF.wav" name="77(F4)-127" rootNote="77" loNote="77" hiNote="77" loVel="103" hiVel="127" start="44" end="492160"/>
+      <sample path="samples/stinway-F#4-V25-GMP2.wav" name="78(F#4)-25" rootNote="78" loNote="78" hiNote="78" loVel="0" hiVel="25" start="92" end="486017"/>
+      <sample path="samples/stinway-F#4-V51-S0Z4.wav" name="78(F#4)-51" rootNote="78" loNote="78" hiNote="78" loVel="26" hiVel="51" start="136" end="489984"/>
+      <sample path="samples/stinway-F#4-V76-WVQB.wav" name="78(F#4)-76" rootNote="78" loNote="78" hiNote="78" loVel="52" hiVel="76" start="17" end="489344"/>
+      <sample path="samples/stinway-F#4-V102-APQW.wav" name="78(F#4)-102" rootNote="78" loNote="78" hiNote="78" loVel="77" hiVel="102" start="44" end="488960"/>
+      <sample path="samples/stinway-F#4-V127-W6WB.wav" name="78(F#4)-127" rootNote="78" loNote="78" hiNote="78" loVel="103" hiVel="127" start="16" end="489984"/>
+      <sample path="samples/stinway-G4-V25-TJ8Y.wav" name="79(G4)-25" rootNote="79" loNote="79" hiNote="79" loVel="0" hiVel="25" start="28" end="335360"/>
+      <sample path="samples/stinway-G4-V51-3415.wav" name="79(G4)-51" rootNote="79" loNote="79" hiNote="79" loVel="26" hiVel="51" start="48" end="484480"/>
+      <sample path="samples/stinway-G4-V76-2WX7.wav" name="79(G4)-76" rootNote="79" loNote="79" hiNote="79" loVel="52" hiVel="76" start="44" end="486656"/>
+      <sample path="samples/stinway-G4-V102-R9N5.wav" name="79(G4)-102" rootNote="79" loNote="79" hiNote="79" loVel="77" hiVel="102" start="24" end="488195"/>
+      <sample path="samples/stinway-G4-V127-0PIO.wav" name="79(G4)-127" rootNote="79" loNote="79" hiNote="79" loVel="103" hiVel="127" start="44" end="489871"/>
+      <sample path="samples/stinway-G#4-V25-7DXX.wav" name="80(G#4)-25" rootNote="80" loNote="80" hiNote="80" loVel="0" hiVel="25" start="112" end="423168"/>
+      <sample path="samples/stinway-G#4-V51-UH48.wav" name="80(G#4)-51" rootNote="80" loNote="80" hiNote="80" loVel="26" hiVel="51" start="52" end="486281"/>
+      <sample path="samples/stinway-G#4-V76-04PY.wav" name="80(G#4)-76" rootNote="80" loNote="80" hiNote="80" loVel="52" hiVel="76" start="62" end="487297"/>
+      <sample path="samples/stinway-G#4-V102-816B.wav" name="80(G#4)-102" rootNote="80" loNote="80" hiNote="80" loVel="77" hiVel="102" start="16" end="488448"/>
+      <sample path="samples/stinway-G#4-V127-QCLQ.wav" name="80(G#4)-127" rootNote="80" loNote="80" hiNote="80" loVel="103" hiVel="127" start="112" end="491009"/>
+      <sample path="samples/stinway-A4-V25-DLC3.wav" name="81(A4)-25" rootNote="81" loNote="81" hiNote="81" loVel="0" hiVel="25" start="48" end="355968"/>
+      <sample path="samples/stinway-A4-V51-8V3F.wav" name="81(A4)-51" rootNote="81" loNote="81" hiNote="81" loVel="26" hiVel="51" start="136" end="486272"/>
+      <sample path="samples/stinway-A4-V76-B7V0.wav" name="81(A4)-76" rootNote="81" loNote="81" hiNote="81" loVel="52" hiVel="76" start="61" end="491995"/>
+      <sample path="samples/stinway-A4-V102-BOBF.wav" name="81(A4)-102" rootNote="81" loNote="81" hiNote="81" loVel="77" hiVel="102" start="44" end="488448"/>
+      <sample path="samples/stinway-A4-V127-0WR2.wav" name="81(A4)-127" rootNote="81" loNote="81" hiNote="81" loVel="103" hiVel="127" start="136" end="490246"/>
+      <sample path="samples/stinway-A#4-V25-X4PL.wav" name="82(A#4)-25" rootNote="82" loNote="82" hiNote="82" loVel="0" hiVel="25" start="48" end="485376"/>
+      <sample path="samples/stinway-A#4-V51-CX7C.wav" name="82(A#4)-51" rootNote="82" loNote="82" hiNote="82" loVel="26" hiVel="51" start="44" end="488448"/>
+      <sample path="samples/stinway-A#4-V76-TP1T.wav" name="82(A#4)-76" rootNote="82" loNote="82" hiNote="82" loVel="52" hiVel="76" start="131" end="492406"/>
+      <sample path="samples/stinway-A#4-V102-5ELU.wav" name="82(A#4)-102" rootNote="82" loNote="82" hiNote="82" loVel="77" hiVel="102" start="48" end="488576"/>
+      <sample path="samples/stinway-A#4-V127-4YIJ.wav" name="82(A#4)-127" rootNote="82" loNote="82" hiNote="82" loVel="103" hiVel="127" start="140" end="489738"/>
+      <sample path="samples/stinway-B4-V25-T5L7.wav" name="83(B4)-25" rootNote="83" loNote="83" hiNote="83" loVel="0" hiVel="25" start="44" end="340096"/>
+      <sample path="samples/stinway-B4-V51-76S5.wav" name="83(B4)-51" rootNote="83" loNote="83" hiNote="83" loVel="26" hiVel="51" start="128" end="488196"/>
+      <sample path="samples/stinway-B4-V76-MJJS.wav" name="83(B4)-76" rootNote="83" loNote="83" hiNote="83" loVel="52" hiVel="76" start="49" end="494822"/>
+      <sample path="samples/stinway-B4-V102-WNQD.wav" name="83(B4)-102" rootNote="83" loNote="83" hiNote="83" loVel="77" hiVel="102" start="44" end="488320"/>
+      <sample path="samples/stinway-B4-V127-J2P1.wav" name="83(B4)-127" rootNote="83" loNote="83" hiNote="83" loVel="103" hiVel="127" start="44" end="490765"/>
+      <sample path="samples/stinway-C5-V25-8OPO.wav" name="84(C5)-25" rootNote="84" loNote="84" hiNote="84" loVel="0" hiVel="25" start="31" end="443154"/>
+      <sample path="samples/stinway-C5-V51-RJEM.wav" name="84(C5)-51" rootNote="84" loNote="84" hiNote="84" loVel="26" hiVel="51" start="145" end="487685"/>
+      <sample path="samples/stinway-C5-V76-09I5.wav" name="84(C5)-76" rootNote="84" loNote="84" hiNote="84" loVel="52" hiVel="76" start="102" end="492553"/>
+      <sample path="samples/stinway-C5-V102-1O2O.wav" name="84(C5)-102" rootNote="84" loNote="84" hiNote="84" loVel="77" hiVel="102" start="136" end="484621"/>
+      <sample path="samples/stinway-C5-V127-ZWYP.wav" name="84(C5)-127" rootNote="84" loNote="84" hiNote="84" loVel="103" hiVel="127" start="44" end="487168"/>
+      <sample path="samples/stinway-C#5-V25-R4SO.wav" name="85(C#5)-25" rootNote="85" loNote="85" hiNote="85" loVel="0" hiVel="25" start="83" end="418566"/>
+      <sample path="samples/stinway-C#5-V51-FCAX.wav" name="85(C#5)-51" rootNote="85" loNote="85" hiNote="85" loVel="26" hiVel="51" start="48" end="488576"/>
+      <sample path="samples/stinway-C#5-V76-SESV.wav" name="85(C#5)-76" rootNote="85" loNote="85" hiNote="85" loVel="52" hiVel="76" start="50" end="492757"/>
+      <sample path="samples/stinway-C#5-V102-M70F.wav" name="85(C#5)-102" rootNote="85" loNote="85" hiNote="85" loVel="77" hiVel="102" start="40" end="485888"/>
+      <sample path="samples/stinway-C#5-V127-Z3K1.wav" name="85(C#5)-127" rootNote="85" loNote="85" hiNote="85" loVel="103" hiVel="127" start="44" end="488717"/>
+      <sample path="samples/stinway-D5-V25-4I7Y.wav" name="86(D5)-25" rootNote="86" loNote="86" hiNote="86" loVel="0" hiVel="25" start="58" end="375175"/>
+      <sample path="samples/stinway-D5-V51-K1QL.wav" name="86(D5)-51" rootNote="86" loNote="86" hiNote="86" loVel="26" hiVel="51" start="132" end="488197"/>
+      <sample path="samples/stinway-D5-V76-ASOO.wav" name="86(D5)-76" rootNote="86" loNote="86" hiNote="86" loVel="52" hiVel="76" start="57" end="492930"/>
+      <sample path="samples/stinway-D5-V102-W1B9.wav" name="86(D5)-102" rootNote="86" loNote="86" hiNote="86" loVel="77" hiVel="102" start="20" end="487191"/>
+      <sample path="samples/stinway-D5-V127-JTBV.wav" name="86(D5)-127" rootNote="86" loNote="86" hiNote="86" loVel="103" hiVel="127" start="132" end="487308"/>
+      <sample path="samples/stinway-D#5-V25-CFC6.wav" name="87(D#5)-25" rootNote="87" loNote="87" hiNote="87" loVel="0" hiVel="25" start="50" end="384256"/>
+      <sample path="samples/stinway-D#5-V51-IOLF.wav" name="87(D#5)-51" rootNote="87" loNote="87" hiNote="87" loVel="26" hiVel="51" start="88" end="487680"/>
+      <sample path="samples/stinway-D#5-V76-ACUH.wav" name="87(D#5)-76" rootNote="87" loNote="87" hiNote="87" loVel="52" hiVel="76" start="48" end="495025"/>
+      <sample path="samples/stinway-D#5-V102-DA0C.wav" name="87(D#5)-102" rootNote="87" loNote="87" hiNote="87" loVel="77" hiVel="102" start="140" end="478112"/>
+      <sample path="samples/stinway-D#5-V127-TOQR.wav" name="87(D#5)-127" rootNote="87" loNote="87" hiNote="87" loVel="103" hiVel="127" start="24" end="485632"/>
+      <sample path="samples/stinway-E5-V25-68VT.wav" name="88(E5)-25" rootNote="88" loNote="88" hiNote="88" loVel="0" hiVel="25" start="44" end="334946"/>
+      <sample path="samples/stinway-E5-V51-5ZS3.wav" name="88(E5)-51" rootNote="88" loNote="88" hiNote="88" loVel="26" hiVel="51" start="36" end="484608"/>
+      <sample path="samples/stinway-E5-V76-GMU4.wav" name="88(E5)-76" rootNote="88" loNote="88" hiNote="88" loVel="52" hiVel="76" start="107" end="486971"/>
+      <sample path="samples/stinway-E5-V102-FXXY.wav" name="88(E5)-102" rootNote="88" loNote="88" hiNote="88" loVel="77" hiVel="102" start="44" end="483674"/>
+      <sample path="samples/stinway-E5-V127-AYUW.wav" name="88(E5)-127" rootNote="88" loNote="88" hiNote="88" loVel="103" hiVel="127" start="44" end="486552"/>
+      <sample path="samples/stinway-F5-V25-11DD.wav" name="89(F5)-25" rootNote="89" loNote="89" hiNote="89" loVel="0" hiVel="25" start="40" end="326897"/>
+      <sample path="samples/stinway-F5-V51-K940.wav" name="89(F5)-51" rootNote="89" loNote="89" hiNote="89" loVel="26" hiVel="51" start="24" end="486541"/>
+      <sample path="samples/stinway-F5-V76-RN3R.wav" name="89(F5)-76" rootNote="89" loNote="89" hiNote="89" loVel="52" hiVel="76" start="52" end="489117"/>
+      <sample path="samples/stinway-F5-V102-X9MO.wav" name="89(F5)-102" rootNote="89" loNote="89" hiNote="89" loVel="77" hiVel="102" start="140" end="485383"/>
+      <sample path="samples/stinway-F5-V127-EC5A.wav" name="89(F5)-127" rootNote="89" loNote="89" hiNote="89" loVel="103" hiVel="127" start="44" end="487680"/>
+      <sample path="samples/stinway-F#5-V25-K80S.wav" name="90(F#5)-25" rootNote="90" loNote="90" hiNote="90" loVel="0" hiVel="25" start="54" end="270852"/>
+      <sample path="samples/stinway-F#5-V51-47Q1.wav" name="90(F#5)-51" rootNote="90" loNote="90" hiNote="90" loVel="26" hiVel="51" start="104" end="486400"/>
+      <sample path="samples/stinway-F#5-V76-TLSQ.wav" name="90(F#5)-76" rootNote="90" loNote="90" hiNote="90" loVel="52" hiVel="76" start="137" end="487300"/>
+      <sample path="samples/stinway-F#5-V102-WDDP.wav" name="90(F#5)-102" rootNote="90" loNote="90" hiNote="90" loVel="77" hiVel="102" start="48" end="486528"/>
+      <sample path="samples/stinway-F#5-V127-G1NV.wav" name="90(F#5)-127" rootNote="90" loNote="90" hiNote="90" loVel="103" hiVel="127" start="40" end="487680"/>
+      <sample path="samples/stinway-G5-V25-Z2FF.wav" name="91(G5)-25" rootNote="91" loNote="91" hiNote="91" loVel="0" hiVel="25" start="45" end="403328"/>
+      <sample path="samples/stinway-G5-V51-SBCT.wav" name="91(G5)-51" rootNote="91" loNote="91" hiNote="91" loVel="26" hiVel="51" end="510594"/>
+      <sample path="samples/stinway-G5-V76-3K30.wav" name="91(G5)-76" rootNote="91" loNote="91" hiNote="91" loVel="52" hiVel="76" end="537139"/>
+      <sample path="samples/stinway-G5-V102-6YJX.wav" name="91(G5)-102" rootNote="91" loNote="91" hiNote="91" loVel="77" hiVel="102" end="522755"/>
+      <sample path="samples/stinway-G5-V127-QPQE.wav" name="91(G5)-127" rootNote="91" loNote="91" hiNote="91" loVel="103" hiVel="127" end="548096"/>
+      <sample path="samples/stinway-G#5-V25-KWST.wav" name="92(G#5)-25" rootNote="92" loNote="92" hiNote="92" loVel="0" hiVel="25" end="305927"/>
+      <sample path="samples/stinway-G#5-V51-EAC1.wav" name="92(G#5)-51" rootNote="92" loNote="92" hiNote="92" loVel="26" hiVel="51" end="510336"/>
+      <sample path="samples/stinway-G#5-V76-Q3IM.wav" name="92(G#5)-76" rootNote="92" loNote="92" hiNote="92" loVel="52" hiVel="76" end="528586"/>
+      <sample path="samples/stinway-G#5-V102-MAFV.wav" name="92(G#5)-102" rootNote="92" loNote="92" hiNote="92" loVel="77" hiVel="102" end="517760"/>
+      <sample path="samples/stinway-G#5-V127-JFZS.wav" name="92(G#5)-127" rootNote="92" loNote="92" hiNote="92" loVel="103" hiVel="127" end="535436"/>
+      <sample path="samples/stinway-A5-V25-9NQF.wav" name="93(A5)-25" rootNote="93" loNote="93" hiNote="93" loVel="0" hiVel="25" end="189406"/>
+      <sample path="samples/stinway-A5-V51-WX3P.wav" name="93(A5)-51" rootNote="93" loNote="93" hiNote="93" loVel="26" hiVel="51" end="449600"/>
+      <sample path="samples/stinway-A5-V76-SOX6.wav" name="93(A5)-76" rootNote="93" loNote="93" hiNote="93" loVel="52" hiVel="76" end="516516"/>
+      <sample path="samples/stinway-A5-V102-QE06.wav" name="93(A5)-102" rootNote="93" loNote="93" hiNote="93" loVel="77" hiVel="102" end="507136"/>
+      <sample path="samples/stinway-A5-V127-HWGK.wav" name="93(A5)-127" rootNote="93" loNote="93" hiNote="93" loVel="103" hiVel="127" end="524544"/>
+      <sample path="samples/stinway-A#5-V25-YZQ6.wav" name="94(A#5)-25" rootNote="94" loNote="94" hiNote="94" loVel="0" hiVel="25" end="251695"/>
+      <sample path="samples/stinway-A#5-V51-1B7J.wav" name="94(A#5)-51" rootNote="94" loNote="94" hiNote="94" loVel="26" hiVel="51" end="478187"/>
+      <sample path="samples/stinway-A#5-V76-BEOL.wav" name="94(A#5)-76" rootNote="94" loNote="94" hiNote="94" loVel="52" hiVel="76" end="495282"/>
+      <sample path="samples/stinway-A#5-V102-P5TB.wav" name="94(A#5)-102" rootNote="94" loNote="94" hiNote="94" loVel="77" hiVel="102" end="497024"/>
+      <sample path="samples/stinway-A#5-V127-2400.wav" name="94(A#5)-127" rootNote="94" loNote="94" hiNote="94" loVel="103" hiVel="127" end="513536"/>
+      <sample path="samples/stinway-B5-V25-050A.wav" name="95(B5)-25" rootNote="95" loNote="95" hiNote="95" loVel="0" hiVel="25" end="103851"/>
+      <sample path="samples/stinway-B5-V51-N0KM.wav" name="95(B5)-51" rootNote="95" loNote="95" hiNote="95" loVel="26" hiVel="51" end="403453"/>
+      <sample path="samples/stinway-B5-V76-K0FH.wav" name="95(B5)-76" rootNote="95" loNote="95" hiNote="95" loVel="52" hiVel="76" end="499426"/>
+      <sample path="samples/stinway-B5-V102-CDQT.wav" name="95(B5)-102" rootNote="95" loNote="95" hiNote="95" loVel="77" hiVel="102" end="492607"/>
+      <sample path="samples/stinway-B5-V127-109Z.wav" name="95(B5)-127" rootNote="95" loNote="95" hiNote="95" loVel="103" hiVel="127" end="510693"/>
+      <sample path="samples/stinway-C6-V25-O1DV.wav" name="96(C6)-25" rootNote="96" loNote="96" hiNote="96" loVel="0" hiVel="25" end="272476"/>
+      <sample path="samples/stinway-C6-V51-CUP7.wav" name="96(C6)-51" rootNote="96" loNote="96" hiNote="96" loVel="26" hiVel="51" end="480594"/>
+      <sample path="samples/stinway-C6-V76-6X15.wav" name="96(C6)-76" rootNote="96" loNote="96" hiNote="96" loVel="52" hiVel="76" end="528288"/>
+      <sample path="samples/stinway-C6-V102-6MQJ.wav" name="96(C6)-102" rootNote="96" loNote="96" hiNote="96" loVel="77" hiVel="102" end="511224"/>
+      <sample path="samples/stinway-C6-V127-FCVH.wav" name="96(C6)-127" rootNote="96" loNote="96" hiNote="96" loVel="103" hiVel="127" end="528946"/>
+      <sample path="samples/stinway-C#6-V25-BK75.wav" name="97(C#6)-25" rootNote="97" loNote="97" hiNote="97" loVel="0" hiVel="25" end="309073"/>
+      <sample path="samples/stinway-C#6-V51-JHKY.wav" name="97(C#6)-51" rootNote="97" loNote="97" hiNote="97" loVel="26" hiVel="51" end="493999"/>
+      <sample path="samples/stinway-C#6-V76-FNI1.wav" name="97(C#6)-76" rootNote="97" loNote="97" hiNote="97" loVel="52" hiVel="76" end="523064"/>
+      <sample path="samples/stinway-C#6-V102-CIUP.wav" name="97(C#6)-102" rootNote="97" loNote="97" hiNote="97" loVel="77" hiVel="102" end="499504"/>
+      <sample path="samples/stinway-C#6-V127-OTCS.wav" name="97(C#6)-127" rootNote="97" loNote="97" hiNote="97" loVel="103" hiVel="127" end="516232"/>
+      <sample path="samples/stinway-D6-V25-WO4D.wav" name="98(D6)-25" rootNote="98" loNote="98" hiNote="98" loVel="0" hiVel="25" end="286309"/>
+      <sample path="samples/stinway-D6-V51-609E.wav" name="98(D6)-51" rootNote="98" loNote="98" hiNote="98" loVel="26" hiVel="51" end="482331"/>
+      <sample path="samples/stinway-D6-V76-7NT5.wav" name="98(D6)-76" rootNote="98" loNote="98" hiNote="98" loVel="52" hiVel="76" end="511513"/>
+      <sample path="samples/stinway-D6-V102-CUSA.wav" name="98(D6)-102" rootNote="98" loNote="98" hiNote="98" loVel="77" hiVel="102" end="500243"/>
+      <sample path="samples/stinway-D6-V127-U4TS.wav" name="98(D6)-127" rootNote="98" loNote="98" hiNote="98" loVel="103" hiVel="127" end="519004"/>
+      <sample path="samples/stinway-D#6-V25-QP7U.wav" name="99(D#6)-25" rootNote="99" loNote="99" hiNote="99" loVel="0" hiVel="25" end="364567"/>
+      <sample path="samples/stinway-D#6-V51-GT0J.wav" name="99(D#6)-51" rootNote="99" loNote="99" hiNote="99" loVel="26" hiVel="51" end="520655"/>
+      <sample path="samples/stinway-D#6-V76-RNRK.wav" name="99(D#6)-76" rootNote="99" loNote="99" hiNote="99" loVel="52" hiVel="76" end="520427"/>
+      <sample path="samples/stinway-D#6-V102-R8KI.wav" name="99(D#6)-102" rootNote="99" loNote="99" hiNote="99" loVel="77" hiVel="102" end="532845"/>
+      <sample path="samples/stinway-D#6-V127-NZHV.wav" name="99(D#6)-127" rootNote="99" loNote="99" hiNote="99" loVel="103" hiVel="127" end="546762"/>
+      <sample path="samples/stinway-E6-V25-YB86.wav" name="100(E6)-25" rootNote="100" loNote="100" hiNote="100" loVel="0" hiVel="25" end="372517"/>
+      <sample path="samples/stinway-E6-V51-WX3F.wav" name="100(E6)-51" rootNote="100" loNote="100" hiNote="100" loVel="26" hiVel="51" end="516763"/>
+      <sample path="samples/stinway-E6-V76-Y71F.wav" name="100(E6)-76" rootNote="100" loNote="100" hiNote="100" loVel="52" hiVel="76" end="556456"/>
+      <sample path="samples/stinway-E6-V102-HQQM.wav" name="100(E6)-102" rootNote="100" loNote="100" hiNote="100" loVel="77" hiVel="102" end="486705"/>
+      <sample path="samples/stinway-E6-V127-6WZA.wav" name="100(E6)-127" rootNote="100" loNote="100" hiNote="100" loVel="103" hiVel="127" end="508798"/>
+      <sample path="samples/stinway-F6-V25-HCC1.wav" name="101(F6)-25" rootNote="101" loNote="101" hiNote="101" loVel="0" hiVel="25" end="301696"/>
+      <sample path="samples/stinway-F6-V51-YO6M.wav" name="101(F6)-51" rootNote="101" loNote="101" hiNote="101" loVel="26" hiVel="51" end="495368"/>
+      <sample path="samples/stinway-F6-V76-2U2I.wav" name="101(F6)-76" rootNote="101" loNote="101" hiNote="101" loVel="52" hiVel="76" end="508917"/>
+      <sample path="samples/stinway-F6-V102-V0KV.wav" name="101(F6)-102" rootNote="101" loNote="101" hiNote="101" loVel="77" hiVel="102" end="504673"/>
+      <sample path="samples/stinway-F6-V127-2D3I.wav" name="101(F6)-127" rootNote="101" loNote="101" hiNote="101" loVel="103" hiVel="127" end="521794"/>
+      <sample path="samples/stinway-F#6-V25-25IF.wav" name="102(F#6)-25" rootNote="102" loNote="102" hiNote="102" loVel="0" hiVel="25" end="291275"/>
+      <sample path="samples/stinway-F#6-V51-UCSB.wav" name="102(F#6)-51" rootNote="102" loNote="102" hiNote="102" loVel="26" hiVel="51" end="484877"/>
+      <sample path="samples/stinway-F#6-V76-OUS0.wav" name="102(F#6)-76" rootNote="102" loNote="102" hiNote="102" loVel="52" hiVel="76" end="521790"/>
+      <sample path="samples/stinway-F#6-V102-6W1I.wav" name="102(F#6)-102" rootNote="102" loNote="102" hiNote="102" loVel="77" hiVel="102" end="525924"/>
+      <sample path="samples/stinway-F#6-V127-CTDM.wav" name="102(F#6)-127" rootNote="102" loNote="102" hiNote="102" loVel="103" hiVel="127" end="543967"/>
+      <sample path="samples/stinway-G6-V25-Z07P.wav" name="103(G6)-25" rootNote="103" loNote="103" hiNote="103" loVel="0" hiVel="25" end="328441"/>
+      <sample path="samples/stinway-G6-V51-NPWX.wav" name="103(G6)-51" rootNote="103" loNote="103" hiNote="103" loVel="26" hiVel="51" end="509555"/>
+      <sample path="samples/stinway-G6-V76-CUFY.wav" name="103(G6)-76" rootNote="103" loNote="103" hiNote="103" loVel="52" hiVel="76" end="509367"/>
+      <sample path="samples/stinway-G6-V102-A5WE.wav" name="103(G6)-102" rootNote="103" loNote="103" hiNote="103" loVel="77" hiVel="102" end="495486"/>
+      <sample path="samples/stinway-G6-V127-VI0X.wav" name="103(G6)-127" rootNote="103" loNote="103" hiNote="103" loVel="103" hiVel="127" end="517403"/>
+      <sample path="samples/stinway-G#6-V25-BB02.wav" name="104(G#6)-25" rootNote="104" loNote="104" hiNote="104" loVel="0" hiVel="25" end="282235"/>
+      <sample path="samples/stinway-G#6-V51-RA88.wav" name="104(G#6)-51" rootNote="104" loNote="104" hiNote="104" loVel="26" hiVel="51" end="475711"/>
+      <sample path="samples/stinway-G#6-V76-RUI3.wav" name="104(G#6)-76" rootNote="104" loNote="104" hiNote="104" loVel="52" hiVel="76" end="512043"/>
+      <sample path="samples/stinway-G#6-V102-A4ES.wav" name="104(G#6)-102" rootNote="104" loNote="104" hiNote="104" loVel="77" hiVel="102" end="529060"/>
+      <sample path="samples/stinway-G#6-V127-DMXM.wav" name="104(G#6)-127" rootNote="104" loNote="104" hiNote="104" loVel="103" hiVel="127" end="537455"/>
+      <sample path="samples/stinway-A6-V25-VC9X.wav" name="105(A6)-25" rootNote="105" loNote="105" hiNote="105" loVel="0" hiVel="25" end="243589"/>
+      <sample path="samples/stinway-A6-V51-669Z.wav" name="105(A6)-51" rootNote="105" loNote="105" hiNote="105" loVel="26" hiVel="51" end="463488"/>
+      <sample path="samples/stinway-A6-V76-FNG2.wav" name="105(A6)-76" rootNote="105" loNote="105" hiNote="105" loVel="52" hiVel="76" end="506482"/>
+      <sample path="samples/stinway-A6-V102-HWX5.wav" name="105(A6)-102" rootNote="105" loNote="105" hiNote="105" loVel="77" hiVel="102" end="519165"/>
+      <sample path="samples/stinway-A6-V127-JJ86.wav" name="105(A6)-127" rootNote="105" loNote="105" hiNote="105" loVel="103" hiVel="127" end="538220"/>
+      <sample path="samples/stinway-A#6-V25-3FXL.wav" name="106(A#6)-25" rootNote="106" loNote="106" hiNote="106" loVel="0" hiVel="25" end="294656"/>
+      <sample path="samples/stinway-A#6-V51-ZWUL.wav" name="106(A#6)-51" rootNote="106" loNote="106" hiNote="106" loVel="26" hiVel="51" end="474915"/>
+      <sample path="samples/stinway-A#6-V76-QWG2.wav" name="106(A#6)-76" rootNote="106" loNote="106" hiNote="106" loVel="52" hiVel="76" end="509549"/>
+      <sample path="samples/stinway-A#6-V102-FYJO.wav" name="106(A#6)-102" rootNote="106" loNote="106" hiNote="106" loVel="77" hiVel="102" end="508734"/>
+      <sample path="samples/stinway-A#6-V127-XZKF.wav" name="106(A#6)-127" rootNote="106" loNote="106" hiNote="106" loVel="103" hiVel="127" end="531141"/>
+      <sample path="samples/stinway-B6-V25-T9X0.wav" name="107(B6)-25" rootNote="107" loNote="107" hiNote="107" loVel="0" hiVel="25" end="337664"/>
+      <sample path="samples/stinway-B6-V51-MQ26.wav" name="107(B6)-51" rootNote="107" loNote="107" hiNote="107" loVel="26" hiVel="51" end="496245"/>
+      <sample path="samples/stinway-B6-V76-8ZQC.wav" name="107(B6)-76" rootNote="107" loNote="107" hiNote="107" loVel="52" hiVel="76" end="531376"/>
+      <sample path="samples/stinway-B6-V102-TLOB.wav" name="107(B6)-102" rootNote="107" loNote="107" hiNote="107" loVel="77" hiVel="102" end="481122"/>
+      <sample path="samples/stinway-B6-V127-RM14.wav" name="107(B6)-127" rootNote="107" loNote="107" hiNote="107" loVel="103" hiVel="127" end="505382"/>
+      <sample path="samples/stinway-C7-V25-SUMD.wav" name="108(C7)-25" rootNote="108" loNote="108" hiNote="108" loVel="0" hiVel="25" end="259887"/>
+      <sample path="samples/stinway-C7-V51-KL8I.wav" name="108(C7)-51" rootNote="108" loNote="108" hiNote="108" loVel="26" hiVel="51" end="462464"/>
+      <sample path="samples/stinway-C7-V76-K2X4.wav" name="108(C7)-76" rootNote="108" loNote="108" hiNote="108" loVel="52" hiVel="76" end="520731"/>
+      <sample path="samples/stinway-C7-V102-2S66.wav" name="108(C7)-102" rootNote="108" loNote="108" hiNote="108" loVel="77" hiVel="102" end="509264"/>
+      <sample path="samples/stinway-C7-V127-MQKE.wav" name="108(C7)-127" rootNote="108" loNote="108" hiNote="108" loVel="103" hiVel="127" end="536181"/>
+      <effects/>
+    </group>
+  </groups>
+  <effects>
+    <effect type="lowpass" frequency="21989.00916994164"/>
+    <effect type="chorus" mix="0.0" modDepth="0.2" modRate="0.2"/>
+    <effect type="convolution" mix="0.0" irFile="IR/Studio.wav"/>
+  </effects>
+  <midi>
+    <cc number="1">
+      <binding level="ui" type="control" parameter="VALUE" position="3" translation="linear" translationOutputMin="0" translationOutputMax="1"/>
+    </cc>
+  </midi>
+  <modulators/>
+  <tags/>
+</DecentSampler>
